@@ -61,7 +61,7 @@ public class TodoNoteOverview extends Fragment {
     private void openAddTodoNoteDialog() {
         View dialogView = LayoutInflater.from(getContext()).inflate(R.layout.create_todo_note_dialog, null);
         new AlertDialog.Builder(getContext())
-            .setTitle("Input")
+            .setTitle("New todo note")
             .setView(dialogView)
             .setPositiveButton("OK", (dialog, which) -> {
                 var inputComponent = (EditText) dialogView.findViewById(R.id.textView);
